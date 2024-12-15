@@ -1,0 +1,106 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    background: url("/imagens/background.jpg");
+    background-size: cover;
+
+}
+.nuvem{
+    position: relative;
+    width: 160px;
+    height: 130px;
+    top: -10px;
+    right: -800px;
+    overflow: hidden;
+    animation: animar4 10s infinite linear;
+}
+.bird{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    right: 800px;
+    animation: animar3 6s infinite linear;
+    top: 50px;
+}
+.gameboard{
+    width: 800px;
+    height: 452px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: url("/imagens/wallpaper.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kunai{
+    position: absolute;
+    width: 100px;
+    right: 650px;
+    height: 100px;
+    top: 350px;
+    bottom: 0;
+    animation: animar1 2s infinite linear;
+}
+
+.naruto{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    top: 350px;
+}
+.pulo{
+    animation: animar2 0.8s ease-out;
+}
+
+@keyframes animar1{
+    0%{
+        right: -100px;
+    }
+    100%{
+        right: 780px;
+    }
+}
+@keyframes animar2{
+    0%{
+        top: 350px;
+    }
+    40%{
+        top: 280px;
+    }
+    50%{
+        top: 280px;
+    }
+    60%{
+        top: 280px;
+    }
+    100%{
+        top: 350px;
+    }
+}
+@keyframes animar3{
+    0%{
+        right: 800px;
+    }
+    100%{
+        right: -300px;
+    }
+}
+@keyframes animar4{
+    0%{
+        right: 150px;
+    }
+    100%{
+        right: -800px;
+    }
+}
